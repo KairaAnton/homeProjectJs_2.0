@@ -240,18 +240,156 @@ console.log(composition);
 
 // 1
 
+// после принятия num выводит всегда false, но если ввести число в консоле то работает норм
+/*
+
+
 let num = +prompt('является ли простым ваше число? Введите число');
 
-const isSimpleNumber = (num) => (num > 0 && num<10);
+const isSimpleNumber = (num) => num > 0 && num < 10;
 
-
-
-
-
-// function isSimpleNumber(num){
-//     if(num > 0 && num < 10){
-//         return true;
-//     } 
-// }
 
 console.log(isSimpleNumber());
+
+
+
+
+// 2
+
+ const checkMultiplisity = (a, b) => a % b === 0;
+
+ console.log(checkMultiplisity());
+
+ 
+
+ // 3
+
+ const isTriangleCreated = (a,b,c) => a + b > c && a + c > b && b + c > a; 
+
+*/
+
+
+// 4
+/*
+
+
+function areaTriangle(a, b, c){
+    let p = (a + b + c) / 2;
+    let s;
+    return s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+
+}
+
+
+
+function areaRectangle(a, b){
+    return a * b;
+}
+
+*/
+
+// Таски на объекты
+
+// 1.1
+
+/*
+
+const Student = {
+    firstName: "Vasya",
+    lastName: "Vasin",
+    male: "gender",
+    contactDetails: "+380664343434"
+};
+
+// 1.2
+
+const University = {
+    faculty: "IT",
+    department: "military training"
+};
+
+
+
+
+//////////////////
+*/
+
+// const mas = [
+//     "86548",
+//     "76588",
+//     "56789",
+//     "65579",
+//     "67578"
+// ];
+
+/////////////
+
+
+// 3.1
+
+function Book (autor, title, yearOfPublication, publisher){
+    this.autor = autor,
+    this.title = title,
+    this.yearOfPublication = yearOfPublication,
+    this.publisher = publisher
+};
+
+ElectronicBook.prototype = new Book();
+
+function ElectronicBook(format, electronicNumber){
+    this.format = format,
+    this.electronicNumber = electronicNumber
+};
+
+const book = new ElectronicBook("srtser","wertwe");
+
+console.log(book);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
