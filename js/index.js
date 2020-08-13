@@ -314,18 +314,41 @@ const University = {
 //////////////////
 */
 
-// const mas = [
-//     "86548",
-//     "76588",
-//     "56789",
-//     "65579",
-//     "67578"
-// ];
+const arr = [
+    "86548",
+    "76588",
+    "56789",
+    "65579",
+    "67578"
+];
 
-/////////////
+console.log(arr);
+console.log(arr.length);
+
+
+arr.forEach(function(item){
+    let i;
+    console.log(arr.length[i=1]);
+    i = i + 2;
+})
+   
+
+    for(let i = 1; i < arr.length; i++){
+        if(arr[i] % 2 === 0){
+            console.log(arr[i]);
+        }
+    }
+
+
+
+
+
+///////////
 
 
 // 3.1
+
+/*
 
 function Book (autor, title, yearOfPublication, publisher){
     this.autor = autor,
@@ -345,7 +368,7 @@ const book = new ElectronicBook("srtser","wertwe");
 
 console.log(book);
 
-
+*/
 
 
 
