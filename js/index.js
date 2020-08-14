@@ -313,38 +313,72 @@ const University = {
 
 //////////////////
 */
+/*
+
 
 const arr = [
-    "86548",
-    "76588",
-    "56789",
-    "65579",
-    "67578"
+    "0",
+    "1",
+    "2",
+    undefined,
+    "4",
+    "5",
+    "undefined",
+    undefined,
+    "8"
 ];
 
 console.log(arr);
+
 console.log(arr.length);
 
+console.log("=============================");
 
-arr.forEach(function(item){
-    let i;
-    console.log(arr.length[i=1]);
-    i = i + 2;
-})
-   
 
-    for(let i = 1; i < arr.length; i++){
-        if(arr[i] % 2 === 0){
-            console.log(arr[i]);
+for(let i = 0; i < arr.length; i++){
+        if(i % 2 === 0){    
+        console.log(i);
+        }
+}
+
+
+
+console.log("=============================");
+
+
+for(let i = 0; i < arr.length; i++){
+    if(arr[i] % 2 === 0){
+        console.log(arr[i]);
+    }
+}
+
+console.log("=============================");
+
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === undefined){
+            console.log(i);
         }
     }
 
+    console.log("=============================");
 
+    
+    function sumUndefined(){
 
+        let sum = 0;
+        for(let i = 0; i < arr.length; i++){
+            if(arr[i] === undefined){
+                sum++;
+            }
+        }
+        return sum;
+    }
 
+    console.log(sumUndefined());
+   
 
-///////////
-
+    
+*/
 
 // 3.1
 
@@ -370,49 +404,51 @@ console.log(book);
 
 */
 
+// 4
+
+
+/*
+function MyArray(){
+    this.length = 0;
+
+    for(let i = 0; i < arguments.length; i++){
+        this[this.length] = arguments[i];
+
+        this.length++;
+    }
+
+    this.push = function(){
+
+        for(let i = 0; i < arguments.length; i++){
+            this[this.length] = arguments[i];
+    
+            this.length++;
+        }
+
+        
+            return this.length;
+    }
 
 
 
 
+    this.pop = function(){
+       let i = this.length -1;
+        
+        this.length -= 1;
+        return myArr[i];
+    }
+    
+
+    this.forEach = function(){
+        for(let i = 0; i < this.length; i++){
+            console.log(myArr[i])
+        }
+    }
+
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const myArr = new MyArray("test", "test2", "test3", 24242, true);
+*/
